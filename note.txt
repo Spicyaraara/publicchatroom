@@ -115,3 +115,19 @@ import express from 'express';
 => Deploy on Cloud Server 
 
 1. your projcet need  Repo public/private to Github
+
+2. sigin your account https://render.com/
+
+3. Prepare the build output 
+    your project must builded and typically in the dist directory
+
+4. Create a new static site
+click  > "New + " > Static site > Github > your account  > choose repo > click connect 
+
+5 Name: publicchatroom
+  Branch:main
+  Build Command : npm run build ( React , Vue , vite , etc...) , ng build  (Angular)
+  Publish Directory dist
+  start command 
+
+6. Envir Varaibles = copy paste .env data to Environment Varaibles
