@@ -1,0 +1,1 @@
+import{A as o}from"./main-Bu1Zm0RX.js";const r=document.getElementById("signupform");r.addEventListener("submit",e=>{e.preventDefault();const t=document.getElementById("fullname").value.trim(),n=document.getElementById("email").value.trim(),m=document.getElementById("password").value.trim();o().registerUser(t,n,m)});

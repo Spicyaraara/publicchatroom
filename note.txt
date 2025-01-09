@@ -1,0 +1,117 @@
+https://firebase.google.com/  docs  > overview > firebase fundermentals > Web icon > Available Firebase services for web > Cloud Firestore for Web
+
+
+npm init or npm init -y
+npm install firebase or npm install firebase@latest
+npm install express or npm install express@latest
+
+
+=> How to use Vite
+
+1. Install 
+ npm install --save-dev vite
+
+2. Create a new file as vite.config.js
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+    root:'./src',
+    build:{
+        outDir:'../dist', // define the output directory , the output directory for to build file
+    }
+});
+
+3. Update package.json
+  "scripts": {
+    "dev":"vite",
+    "build":"vite build"
+  },
+
+4. Run Build the app for production
+    npm run build
+
+5. Run Vite in development server
+   npm run dev
+
+   => Enable Email / Password Authentication
+   Make sure you have enable Email/Password authenication in your Firebase Console.
+
+   => Enable Google Sign-In in Firebase Console
+
+   Authentication > Sign in Method
+   Enable Google usder the list of providers
+
+   Public 
+
+-------------------------------------------------------------------------------------------------------
+
+How to install taiwind css
+
+1. install taiwind css
+https://tailwindcss.com/docs/installation/using-postcss
+
+npm install -D tailwindcss postcss autoprefixer
+
+npx tailwindcss init (this create a tailwind.config.js file in to your project)
+
+2. Add Taiwind to your  PostCss configuration
+create postcss.config.js manually ( Note : do not forgot to exprot as Es6)
+
+export default = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  }
+}
+
+3. Configure your template paths
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./src/**/*.{html,js,jsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+4. Add the Tailwind directives to your CSS
+create a css file located to  ( e.g src/css/main.css )
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+5. include css link
+<link href="" rel="stylesheet"/>
+
+npm run build 
+npm run dev
+
+----------------------------------------------------------------------------
+
+=> Install Fontawesome 6
+
+npm install @fortawesome/fontawesome-free
+
+import @fortawesome/fontawesome-free/css/all.min.ss;
+
+
+----------------------------------------------------------------------------
+
+=> Install express
+
+npm install express  or npm install express@latest
+
+nodemon server.js
+
+=> import 
+
+import express from 'express';
+
+
+-----------------------------------------------------------------------------------------------
+
+
+=> Deploy on Cloud Server 
+
+1. your projcet need  Repo public/private to Github
